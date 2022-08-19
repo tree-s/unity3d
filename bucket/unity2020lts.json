@@ -3,17 +3,18 @@
     "description": "Unity 3D 2020 (Long Term Support) editor and build tools",
     "homepage": "https://unity3d.com/unity/qa/lts-releases?version=2020",
     "license": "https://unity.com/legal/terms-of-service",
-    "url": "https://download.unity3d.com/download_unity/8f5fde82e2dc/UnityDownloadAssistant-2020.3.38f1.exe",
-    "hash": "1e097988cb6b0abe84a8ee15037f064adfa4815b4cf00e64a3f09498cd3dda09",
+    "url": "https://download.unity3d.com/download_unity/8f5fde82e2dc/Windows64EditorInstaller/UnitySetup64-2020.3.38f1.exe",
+    "hash": "6e55735994202bba5e5d8659015ca72ba6463811923c1733b903f03aa1c93c2c",
     "installer": {
-        "script": "Invoke-ExternalCommand -FilePath \"$dir\\UnityDownloadAssistant-${version}.exe\" -Args @('/S /D=\"$dir\\unity\\\"') -RunAs | Out-Null"
+        "script": "Start-Process -FilePath \"$dir\\UnitySetup64-${version}.exe\" -ArgumentList \"/S /D=$dir\" -Wait"
     },
     "uninstaller": {
-        "script": "Invoke-ExternalCommand -FilePath \"$dir\\unity\\Editor\\Uninstall.exe\" -Args @('/S') -RunAs | Out-Null"
+        "script": "Start-Process -FilePath \"$dir\\Editor\\Uninstall.exe\" -ArgumentList \"/S\" -Wait"
     },
     "env_add_path": [
     ],
     "bin": [
+        "Editor\\Unity.exe"
     ],
     "checkver": {
         "url": "https://unity3d.com/unity/qa/lts-releases?version=2020",
@@ -21,6 +22,6 @@
         "replace": "${1}"
     },
     "autoupdate": {
-        "url": "https://download.unity3d.com/download_unity/${match2}/UnityDownloadAssistant-${match1}.exe"
+        "url": "https://download.unity3d.com/download_unity/${match2}//Windows64EditorInstaller/UnitySetup64-${match1}.exe"
     }
 }
