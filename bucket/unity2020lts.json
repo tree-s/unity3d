@@ -13,15 +13,13 @@
     },
     "env_add_path": [
     ],
-    "bin": [
-        "Editor\\Unity.exe"
-    ],
+    "bin": "Editor\\Unity.exe",
     "checkver": {
         "url": "https://unity3d.com/unity/qa/lts-releases?version=2020",
-        "regex": "unityhub://([0-9]+.[0-9]+.*)//(.*?)\"",
+        "regex": "\"unityhub:\/\/([0-9]+.[0-9]+.*)\/(.*?)\"",
         "replace": "${1}"
     },
     "autoupdate": {
-        "url": "https://download.unity3d.com/download_unity/${match2}//Windows64EditorInstaller/UnitySetup64-${match1}.exe"
+        "url": "https://download.unity3d.com/download_unity/$match2//Windows64EditorInstaller/UnitySetup64-$match1.exe"
     }
 }
