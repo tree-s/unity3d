@@ -11,8 +11,6 @@
     "uninstaller": {
         "script": "Start-Process -FilePath \"$dir\\Editor\\Uninstall.exe\" -ArgumentList \"/S\" -Wait"
     },
-    "env_add_path": [
-    ],
     "bin": "Editor\\Unity.exe",
     "checkver": {
         "url": "https://unity3d.com/unity/qa/lts-releases?version=2020",
