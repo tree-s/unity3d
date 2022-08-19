@@ -1,0 +1,26 @@
+{
+    "version": "2020.3.38f1",
+    "description": "Unity 3D 2020 (Long Term Support) editor and build tools",
+    "homepage": "https://unity3d.com/unity/qa/lts-releases?version=2020",
+    "license": "https://unity.com/legal/terms-of-service",
+    "url": "https://download.unity3d.com/download_unity/8f5fde82e2dc/UnityDownloadAssistant-2020.3.38f1.exe",
+    "hash": "1e097988cb6b0abe84a8ee15037f064adfa4815b4cf00e64a3f09498cd3dda09",
+    "installer": {
+        "script": "Invoke-ExternalCommand -FilePath \"$dir\\UnityDownloadAssistant-${version}.exe\" -Args @('/S', '/D=\"$dir\\vs\\\"') -RunAs | Out-Null"
+    },
+    "uninstaller": {
+        "script": "Invoke-ExternalCommand -FilePath \"$dir\\Editor\\Uninstall.exe\" -Args @('/S') -RunAs | Out-Null"
+    },
+    "env_add_path": [
+    ],
+    "bin": [
+    ],
+    "checkver": {
+        "url": "https://unity3d.com/unity/qa/lts-releases?version=2020",
+        "regex": "\"unityhub:\/\/([0-9]+.[0-9]+.*)\/(.*?)\"",
+        "replace": "${1}"
+    },
+    "autoupdate": {
+        "url": "https://download.unity3d.com/download_unity/${match2}/UnityDownloadAssistant-${match1}.exe"
+    }
+}
