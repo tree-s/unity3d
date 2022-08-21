@@ -1,4 +1,4 @@
-# Scoop Bucket Unity 
+# Scoop Bucket Unity
 
 [![Tests](https://github.com/tree-s/unity3d/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/unity3d/actions/workflows/ci.yml) [![Excavator](https://github.com/tree-s/unity3d/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/unity3d/actions/workflows/excavator.yml)
 
