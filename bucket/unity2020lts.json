@@ -1,5 +1,5 @@
 {
-    "version": "2020.3.38f1",
+    "version": "2020.3.39f1",
     "description": "Unity 3D 2020 (Long Term Support) editor and build tools",
     "homepage": "https://unity3d.com/unity/qa/lts-releases",
     "license": "https://unity.com/legal/terms-of-service",
@@ -7,8 +7,8 @@
         "To register:",
         " PS> unity -quit -batchmode -nographics -serial SE-R-I-A-L -username \"username\" -password \"password\""
     ],
-    "url": "https://download.unity3d.com/download_unity/8f5fde82e2dc/Windows64EditorInstaller/UnitySetup64-2020.3.38f1.exe",
-    "hash": "6e55735994202bba5e5d8659015ca72ba6463811923c1733b903f03aa1c93c2c",
+    "url": "https://download.unity3d.com/download_unity/fd6670bb8be9/Windows64EditorInstaller/UnitySetup64-2020.3.39f1.exe",
+    "hash": "027f690db27512dea732dc59c00a9f8cc920bf6a0dcb25e438311518517a4770",
     "installer": {
         "script": "Start-Process -FilePath \"$dir\\UnitySetup64-${version}.exe\" -ArgumentList \"/S /D=$dir\" -Wait"
     },
@@ -18,7 +18,7 @@
     "bin": "Editor\\Unity.exe",
     "checkver": {
         "url": "https://unity3d.com/unity/qa/lts-releases",
-        "regex": "\"unityhub:\/\/2020(.[0-9]+.*)\/(.*?)\"",
+        "regex": "\"unityhub://2020(.[0-9]+.*)/(.*?)\"",
         "replace": "2020${1}"
     },
     "autoupdate": {
