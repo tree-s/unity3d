@@ -1,5 +1,5 @@
 {
-    "version": "2020.3.40f1",
+    "version": "2020.3.41f1",
     "description": "Unity 3D 2020 (Long Term Support) editor and build tools",
     "homepage": "https://unity3d.com/unity/qa/lts-releases",
     "license": "https://unity.com/legal/terms-of-service",
@@ -7,8 +7,8 @@
         "To register:",
         " PS> unity -quit -batchmode -nographics -serial SE-R-I-A-L -username \"username\" -password \"password\""
     ],
-    "url": "https://download.unity3d.com/download_unity/ba48d4efcef1/Windows64EditorInstaller/UnitySetup64-2020.3.40f1.exe",
-    "hash": "105b0b795655c706ed34c15dacf7ef8fdafeef3cf0c8dd534a72d4632da3ffc8",
+    "url": "https://download.unity3d.com/download_unity/7c19dc9acfda/Windows64EditorInstaller/UnitySetup64-2020.3.41f1.exe",
+    "hash": "21ccd8a3653a35761fffb16abc82e7be5bda1f0e9bfae845ac26a70d34e4f8fc",
     "installer": {
         "script": "Start-Process -FilePath \"$dir\\UnitySetup64-${version}.exe\" -ArgumentList \"/S /D=$dir\" -Wait"
     },
