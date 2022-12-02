@@ -1,5 +1,5 @@
 {
-    "version": "2021.3.14f1",
+    "version": "2021.3.15f1",
     "description": "Unity 3D 2021 (Long Term Support) editor and build tools",
     "homepage": "https://unity3d.com/unity/qa/lts-releases",
     "license": "https://unity.com/legal/terms-of-service",
@@ -7,8 +7,8 @@
         "To register:",
         " PS> unity -quit -batchmode -nographics -serial SE-R-I-A-L -username \"username\" -password \"password\""
     ],
-    "url": "https://download.unity3d.com/download_unity/eee1884e7226/Windows64EditorInstaller/UnitySetup64-2021.3.14f1.exe",
-    "hash": "a4143d28e8480ca2cfa27303e5aad9e4cd6c0f906e180af8ca08b2cb43aac1e8",
+    "url": "https://download.unity3d.com/download_unity/e8e88683f834/Windows64EditorInstaller/UnitySetup64-2021.3.15f1.exe",
+    "hash": "ddeb419818549048291dc6365d342bd0d1a822210798c506720cf1d897ae945e",
     "installer": {
         "script": "Start-Process -FilePath \"$dir\\UnitySetup64-${version}.exe\" -ArgumentList \"/S /D=$dir\" -Wait"
     },
