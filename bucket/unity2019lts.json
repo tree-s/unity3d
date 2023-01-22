@@ -18,7 +18,7 @@
     "bin": "Editor\\Unity.exe",
     "checkver": {
         "url": "https://unity.com/releases/editor/lts-releases.xml",
-        "regex": "\"unityhub:\/\/2019(.[0-9]+.*?)\/(.*)&lt;\"",
+        "regex": "unityhub:\/\/2019(.[0-9]+.*?)\/(.*)&lt;",
         "replace": "2019${1}"
     },
     "autoupdate": {
