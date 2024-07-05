@@ -22,6 +22,6 @@
         "replace": "2022.${1}"
     },
     "autoupdate": {
-        "url": "https://download.unity3d.com/download_unity/$match2/Windows64EditorInstaller/UnitySetup64-2022$match1.exe"
+        "url": "https://download.unity3d.com/download_unity/$match2/Windows64EditorInstaller/UnitySetup64-2022.$match1.exe"
     }
 }
