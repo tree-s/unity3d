@@ -1,7 +1,7 @@
 {
     "version": "2023.3.51f1",
-    "description": "Unity 3D 2023 (Long Term Support) editor and build tools",
-    "homepage": "https://unity3d.com/unity/qa/lts-releases",
+    "description": "Unity 3D 2023 (TECH) editor and build tools",
+    "homepage": "https://unity.com/releases/editor/archive",
     "license": "https://unity.com/legal/terms-of-service",
     "notes": [
         "To register:",
@@ -17,7 +17,7 @@
     },
     "bin": "Editor\\Unity.exe",
     "checkver": {
-        "url": "https://services.api.unity.com/unity/editor/release/v1/releases?platform=WINDOWS&stream=LTS&version=2023&limit=1",
+        "url": "https://services.api.unity.com/unity/editor/release/v1/releases?platform=WINDOWS&stream=TECH&version=2023&limit=1",
         "regex": "unityhub://2023.(\\d+\\.\\d+f\\d+)/([a-f0-9]+)",
         "replace": "2023.${1}"
     },
