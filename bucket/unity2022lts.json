@@ -1,5 +1,5 @@
 {
-    "version": "2022.3.62f1",
+    "version": "2022.3.62f2",
     "description": "Unity 3D 2022 (Long Term Support) editor and build tools",
     "homepage": "https://unity3d.com/unity/qa/lts-releases",
     "license": "https://unity.com/legal/terms-of-service",
@@ -7,8 +7,8 @@
         "To register:",
         " PS> unity -quit -batchmode -nographics -serial SE-R-I-A-L -username \"username\" -password \"password\""
     ],
-    "url": "https://download.unity3d.com/download_unity/4af31df58517/Windows64EditorInstaller/UnitySetup64-2022.3.62f1.exe",
-    "hash": "de6959591114820f1a40032b87b7af912b48851576325a754725fb5d484dd77b",
+    "url": "https://download.unity3d.com/download_unity/7670c08855a9/Windows64EditorInstaller/UnitySetup64-2022.3.62f2.exe",
+    "hash": "c61cf17f0a0864b52b9ea16432c6b8bea0ffc99235a45f3eb97d0193920c2140",
     "installer": {
         "script": "Start-Process -FilePath \"$dir\\UnitySetup64-${version}.exe\" -ArgumentList \"/S /D=$dir\" -Wait"
     },
