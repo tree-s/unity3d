@@ -1,5 +1,5 @@
 {
-    "version": "2019.4.40f1",
+    "version": "2019.4.41f1",
     "description": "Unity 3D 2019 (Long Term Support) editor and build tools",
     "homepage": "https://unity3d.com/unity/qa/lts-releases",
     "license": "https://unity.com/legal/terms-of-service",
@@ -7,8 +7,8 @@
         "To register:",
         " PS> unity -quit -batchmode -nographics -serial SE-R-I-A-L -username \"username\" -password \"password\""
     ],
-    "url": "https://download.unity3d.com/download_unity/ffc62b691db5/Windows64EditorInstaller/UnitySetup64-2019.4.40f1.exe",
-    "hash": "3582bcc984ca2d5125a86f8c3f0eb3a8f56a995e8a7c339dc9bd98e8ff499f54",
+    "url": "https://download.unity3d.com/download_unity/fb553f8fdd6c/Windows64EditorInstaller/UnitySetup64-2019.4.41f1.exe",
+    "hash": "aae9f6b2946fe68e33b5e07900c8d0e6ada802b15a3b6ab8add8fbcb114aa96b",
     "installer": {
         "script": "Start-Process -FilePath \"$dir\\UnitySetup64-${version}.exe\" -ArgumentList \"/S /D=$dir\" -Wait"
     },
